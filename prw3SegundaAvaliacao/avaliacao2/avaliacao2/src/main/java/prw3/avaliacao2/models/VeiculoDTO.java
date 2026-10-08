@@ -17,4 +17,7 @@ public record VeiculoDTO(
         String ano,
         String cor
 ) {
+        public VeiculoDTO(Veiculo veiculo) {
+            this(veiculo.getMarca(), veiculo.getModelo(), veiculo.getAno(), veiculo.getCor());
+        }
 }

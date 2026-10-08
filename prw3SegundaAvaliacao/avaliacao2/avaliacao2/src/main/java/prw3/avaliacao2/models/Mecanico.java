@@ -13,10 +13,19 @@ import lombok.NoArgsConstructor;
 public class Mecanico {
     private String nome;
     @Column(name = "anos_experiencia")
-    private int anosExperiencia;
+    private Integer anosExperiencia;
 
     public Mecanico(MecanicoDTO mecanico) {
         nome = mecanico.nome();
         anosExperiencia = mecanico.anosExperiencia();
+    }
+    public void updateNome(String nome){
+        if(nome.isBlank()){
+            return;
+        }
+        this.nome = nome;
+    }
+    public void updateExperiencia(Integer anosExperiencia){
+        this.anosExperiencia =anosExperiencia;
     }
 }

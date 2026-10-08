@@ -5,6 +5,11 @@ import jakarta.validation.constraints.NotBlank;
 public record MecanicoDTO(
         @NotBlank
         String nome,
-
-        int anosExperiencia) {
+        Integer anosExperiencia) {
+        public MecanicoDTO(Mecanico mecanico) {
+                this(
+                        mecanico.getNome(),
+                        mecanico.getAnosExperiencia()
+                );
+        }
 }

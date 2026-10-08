@@ -21,5 +21,6 @@ public record ConsertoDTO(
         MecanicoDTO mecanico,
 
         @Valid
-        VeiculoDTO veiculo) {
+        VeiculoDTO veiculo
+        ) {
 }
