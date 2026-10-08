@@ -1,0 +1,6 @@
+2026-08-13 08:35:45.249843-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ALUNO" not found; SQL statement:
+delete from aluno where 1=1 [42102-240]
+2026-08-13 10:40:24.838702-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ALUNO" not found; SQL statement:
+delete from Aluno where true = true [42102-240]
