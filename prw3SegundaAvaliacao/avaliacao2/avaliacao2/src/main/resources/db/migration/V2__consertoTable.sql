@@ -1,0 +1,1 @@
+alter table conserto add column cor varchar(20);
